@@ -3,11 +3,10 @@ from mlbdata.schedule import fetchData
 
 app = Flask(__name__)
 
-games = fetchData()
-
 @app.route('/')
 def index():
-    return render_template('index.html')
+    games = fetchData()
+    return render_template('index.html', games=games)
 
 app.debug = True
 app.run()

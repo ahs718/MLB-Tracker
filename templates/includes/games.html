@@ -1,0 +1,21 @@
+<table class="table table-dark table-striped">
+    <thead>
+        <th scope="col">Starting Time</th>
+        <th scope="col">Venue</th>
+        <th scope="col">Home Team</th>
+        <th scope="col">Score</th>
+        <th scope="col">Away Team</th>
+    </thead>
+    <tbody id="tabe_body">
+        <!-- Table body -->
+        {% for game in games %}
+        <tr>
+            <td>{{game.time}}</td>
+            <td>{{game.venue}}</td>
+            <td>{{game.homeTeam.name}}</td>
+            <td>{{game.homeTeam.score}} - {{game.awayTeam.score}}</td>
+            <td>{{game.awayTeam.name}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
