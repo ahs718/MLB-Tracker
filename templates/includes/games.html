@@ -1,4 +1,4 @@
-<table class="table table-dark table-striped">
+<table class="game-table">
     <thead>
         <th scope="col">Starting Time</th>
         <th scope="col">Home Team</th>
@@ -10,13 +10,13 @@
         <!-- Table body -->
         {% for game in games %}
         <tr>
-            <td id="time_{{game.time}}">{{game.time}}</td>
-            <td id="home_{{game.homeTeam.name}}">{{game.homeTeam.name}}</td>
-            <td id="score_{{game.homeTeam.score}}_{{game.awayTeam.score}}">
+            <td id="time">{{game.time}}</td>
+            <td id="home">{{game.homeTeam.name}}</td>
+            <td id="score">
                 {{game.homeTeam.score}} - {{game.awayTeam.score}}
             </td>
-            <td id="away_{{game.awayTeam.name}}">{{game.awayTeam.name}}</td>
-            <td id="venue_{{game.venue}}">{{game.venue}}</td>
+            <td id="away">{{game.awayTeam.name}}</td>
+            <td id="venue">{{game.venue}}</td>
         </tr>
         {% endfor %}
     </tbody>
