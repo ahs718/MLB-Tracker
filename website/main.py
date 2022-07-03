@@ -16,5 +16,4 @@ def about():
 def contact():
     return render_template('contact.html')
 
-app.debug = True
 app.run()
