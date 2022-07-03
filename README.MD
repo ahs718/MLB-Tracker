@@ -38,8 +38,15 @@ In order to run your own instance of this website, enter in the following comman
 ```console
 git clone https://github.com/ahs718/MLB-Tracker.git
 cd MLB-Tracker
+```
+
+```console
+python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+```
+
+```console
 cd website && python3 main.py
 ```
 
