@@ -21,6 +21,10 @@
     padding: 6% 8%;
 }
 
+.text-box h1 {
+    font-size: 50px;
+}
+
 /* Nav Bar */
 nav {
     display: flex;
