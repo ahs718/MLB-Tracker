@@ -1,5 +1,7 @@
 # MLB Tracker
 
+![Screenshot of an instance of the website](website/static/example.png)
+
 This project fetches the current day's MLB game data from a json format using the MLB API, and displays it on a webpage!
 
 Using python as the backend, the data is converted into a list of dictionaries, which is then sorted into its corresponding Game and Team modules.
